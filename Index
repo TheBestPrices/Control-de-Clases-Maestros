@@ -1,1 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Registro de Clases</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <h1>Registro de Clases</h1>
+  
+  <form id="classForm">
+    <input type="date" id="fecha" required>
+    <input type="text" id="materia" placeholder="Materia" required>
+    <input type="text" id="metodo" placeholder="Método de enseñanza" required>
+    <textarea id="resultados" placeholder="Resultados de los estudiantes"></textarea>
+    <button type="submit">Guardar</button>
+  </form>
 
+  <h2>Historial</h2>
+  <ul id="listaClases"></ul>
+
+  <h2>Estadísticas</h2>
+  <canvas id="metodosChart" width="400" height="200"></canvas>
+
+  <script src="app.js"></script>
+</body>
+</html>
